@@ -1,0 +1,65 @@
+# Template for defining UserSays examples
+# give-color-intent:
+#  UserSays:
+#    - My color is blue
+#    - red is my favorite color
+#  Annotations:
+#    - blue: sys.color     # maps param value -> entity
+#    - red: sys.color
+fallback:
+  UserSays:
+  - 
+  - 
+  Annotations:
+  - 
+  - 
+help:
+  UserSays:
+  - help
+  - what can i do?
+  - what can you do?
+  - i need help
+  - what is going on?
+  - how does this work?
+  - what are you doing?
+  - what is this?
+  - what are you doing?
+  - is this supposed to happen?
+  - why is this happening?
+  - why?
+  - what?
+quit:
+  UserSays:
+  - ok that's enough
+  - stop
+  - quit
+  - done for today
+  - quit the program
+  - leave the program
+  - end session
+  - end
+  - goodbye
+  - reset
+  - reset everything
+greetings:
+  UserSays:
+  - launch 
+  - start 
+  - talk to unexpected machine
+  - open unexpected machine
+  - launch unexpected machine
+swearing:
+  UserSays:
+  - what the fuck
+  - why the fuck
+  - shit
+  - fuck this
+  - fuck this shit
+  - you're an asshole
+  - asshole
+  - fucking shit
+  - you're a jerk
+  - why are you being an asshole
+  - what is this shit
+  Annotations:
+  - fuck: swears
