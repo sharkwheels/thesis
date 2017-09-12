@@ -170,7 +170,7 @@ def say_fallback():
 
 		if GO.frustration == 3:				# if home has hit its wits end
 			resp = madResponse()			# generate an angry resp
-			print("!fallback: i{0},f{1},h{2},s{3}".format(resp,GO.interruptions, GO.frustration, GO.help_count,GO.swear_count))
+			print("!witsend: i{0},f{1},h{2},s{3}".format(resp,GO.interruptions, GO.frustration, GO.help_count,GO.swear_count))
 			resetThings()				# reset everything
 			return tell(resp)				# end the conversation
 		else:
@@ -194,16 +194,14 @@ def say_fallback():
 def swear_response():
 	change_hue("0066ff")
 	GO.swear_count+=1
-	print("!swearing i{0}, f{1}, h{2}, s{3}".format(GO.interruptions, GO.frustration, GO.help_count, GO.swear_count))
 	speech = respSwore()
 	print(speech)
+	print("!swearing i{0}, f{1}, h{2}, s{3}".format(GO.interruptions, GO.frustration, GO.help_count, GO.swear_count))
 	return ask(speech)
 
 @assist.action('help')
 def help():
 	change_hue("ff0000")
-	print("!help: i{0},f{1},h{2},s{3}".format(GO.interruptions, GO.frustration, GO.help_count,GO.swear_count))
-	
 	GO.help_count+=1
 	## change the help response based on the level of frustration. 
 	speech = "This is the help section"
@@ -220,6 +218,7 @@ def help():
 	elif GO.help_count > 4:
 		speech = respHelp()
 	print(speech)
+	print("!help: i{0},f{1},h{2},s{3}".format(GO.interruptions, GO.frustration, GO.help_count,GO.swear_count))
 	return ask(speech)
 
 @assist.action('quit')
