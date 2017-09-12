@@ -10,6 +10,8 @@ from flask_restful import Resource, Api
 from flask_httpauth import HTTPBasicAuth
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+
 assist = Assistant(app)
 api = Api(app)
 auth = HTTPBasicAuth()	
