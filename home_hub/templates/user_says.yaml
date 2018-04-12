@@ -1,0 +1,110 @@
+# Template for defining UserSays examples
+# give-color-intent:
+#  UserSays:
+#    - My color is blue
+#    - red is my favorite color
+#  Annotations:
+#    - blue: sys.color     # maps param value -> entity
+#    - red: sys.color
+fallback:
+  UserSays:
+  - 
+  - 
+  Annotations:
+  - 
+  - 
+lamp:
+  UserSays:
+  - change the lamp
+  - turn off the lamp
+  - change the lamp color
+  - turn the lamp up
+  - brighten the lamp
+  - dim the lamp
+news:
+  UserSays:
+  - what's the news
+  - news
+  - tell me the news
+  - give me the news
+  - give me a briefing
+  - flash briefing
+  - current news
+  - briefing
+help:
+  UserSays:
+  - help
+  - what can i do?
+  - what can you do?
+  - i need help
+  - what is going on?
+  - how does this work?
+  - what are you doing?
+  - what is this?
+  - what are you doing?
+  - is this supposed to happen?
+  - why is this happening?
+quit:
+  UserSays:
+  - ok that's enough
+  - quit
+  - quit the program
+  - end session
+  - end
+  - reset
+greetings:
+  UserSays:
+  - talk to unexpected machine
+weather:
+  UserSays:
+    - weather
+    - what's the weather going to be like tomorrow?
+    - what's the weather like?
+    - what is the weather going to be like?
+    - give me the weather
+    - tell me the weather
+    - I want to know the weather
+    - what's up with the weather
+    - the weather
+    - weather report
+    - could you give me the weather forecast for HongKong please?
+    - what is the weather going to be like tomorrow in Paris?
+    - tell me the weather for today
+    - what's the weathing like tonight?
+    - what's the weather in Toronto like?
+  Annotations:
+    - HongKong: sys.location
+    - Toronto: sys.location
+    - Paris: sys.location
+    - today: sys.date-time
+    - tomorrow: sys.date-time
+    - tonight: sys.date-time
+weather-diss:
+  UserSays:
+    - strange weather
+    - you're kidding right?
+    - are you joking?
+    - that doesn't sound right
+    - that's a fib
+    - stop lying
+    - I don't believe you
+    - that's weird
+    - you're lying
+    - what
+    - how is that possible?
+    - that's weird
+swearing:
+  UserSays:
+  - what the fuck
+  - why the fuck
+  - shit
+  - fuck this
+  - fuck this shit
+  - you're an asshole
+  - asshole
+  - fucking shit
+  - you're a jerk
+  - why are you being an asshole
+  - what is this shit
+  Annotations:
+  - fuck: swears

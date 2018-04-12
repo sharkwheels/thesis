@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "intent": "makeAnEvent"
+    },
+    {
+      "slots": [
+        {
+          "name": "thedate",
+          "type": "AMAZON.DATE"
+        },
+        {
+          "name": "timeofday",
+          "type": "AMAZON.TIME"
+        }
+      ],
+      "intent": "EventTimeAndDate"
+    },
+    {
+      "slots": [
+        {
+          "name": "evNameAndloc",
+          "type": "MY_EVENT_NAME"
+        }
+      ],
+      "intent": "EventNameAndLocation"
+    },
+    {
+      "intent": "YesIntent"
+    },
+    {
+      "intent": "NoIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

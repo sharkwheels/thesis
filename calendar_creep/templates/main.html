@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<article>
+        <h2>About</h2>
+        <p>Calendar Creep is an Alexa that runs a custom program to create calendar events. Except that every time you try to make an event it tries to convince you not to go out.</p>
+      </article>
+
+      <article>
+      <h2>Video</h2>
+      <iframe width="640" height="395" src="https://www.youtube.com/embed/k2EPWD_f2bw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </article>
+
+      <article>
+            <h2>Details</h2>
+            <p>The system starts out mimicking the same flow of making an actual event on the Alexa, until it diverges near the end. The more you try to make an event, the more it loops you into a cyclical conversation trying to convince you to stay home. Eventually if you persist in declining, it concedes, but schedules its own conflicting event to hang out at the same time frame as the event you requested to schedule. </p>
+            <p>The system uses session variables to track if I’ve given the correct information to set an event, but also to track how many times I’ve declined Alexa’s offer. Each time I decline, Alexa formulates a new random reason why I shouldn’t go out. </p>
+          </article>
+      <article>
+        <h2>System Logic</h2>
+       <img src="{{ url_for('static', filename='images/system.png') }}" width="640" />
+      </article>
+      <nav id="primary_nav">
+          <ul>
+            <li class="top"><a href="#home">About</a></li>
+          </ul>
+        </nav>
+   
+{% endblock %}

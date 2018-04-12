@@ -1,0 +1,25 @@
+FutureIntent future
+FutureIntent fortune
+FutureIntent reading
+
+YesIntent Yes
+YesIntent Sure
+YesIntent Go ahead
+YesIntent I do
+YesIntent Yup
+YesIntent Yes Please
+YesIntent OK fine
+YesIntent OK
+YesIntent okay
+NoIntent No
+NoIntent Nope
+NoIntent No Thank You
+NoIntent know
+NoIntent I said no
+NoIntent No way
+NoIntent I think not
+NoIntent I've changed my mind
+NoIntent Just Forget it
+AMAZON.HelpIntent Help
+AMAZON.StopIntent Stop
+AMAZON.CancelIntent Cancel

@@ -1,0 +1,20 @@
+<!doctype html>
+{% extends "layout.html" %}
+
+{% block content %}
+<article>
+ 	<h2>Monitoring Page</h2>
+ 	<p>This is tracking the variables that are increasing or decreasing</p>
+ 	<ul>
+ 	<li><strong>interruption count: </strong>{{ interruption }}</li>
+ 	<li><strong>frustration count: </strong>{{ frustration }}</li>
+ 	<li></li>
+  	<li><strong>help count: </strong>{{ help }}</li>
+ 	<li><strong>swear count: </strong>{{ swears }}</li>
+ 	<li><strong>weather count: </strong>{{ weather }}</li>
+ 	<li><strong>news count: </strong>{{ news }}</li>
+ 	<li><strong>lamp count: </strong>{{ lamp }}</li>
+ 	</ul>
+ 	<p> <a href="{{ url_for('index') }}">Return to Index</a></p>
+  </article>
+{% endblock %}

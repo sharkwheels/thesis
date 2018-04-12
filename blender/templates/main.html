@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<article>
+        <h2>About</h2>
+        <p>SAD Blender is an Alexa with a blender peripheral that will only operate if it is in the right frame of mind to do so. Alexa creates a base mood out of a set of external modifiers consisting of temperature, weather, humidity, sun levels, that influences whether it decides to follow your command or not. I get seasonal affective disorder, so I wanted to give it to my device. The result is an Alexa that will sometimes make you a smoothie, but also acknowledges when it is too sad to do so, and initiates some self-care routines for itself in the form of a little light show, or plays itself some music to meditate to.  </p>
+      </article>
+
+      <article>
+      <h2>Video</h2>
+      <iframe width="640" height="395" src="https://www.youtube.com/embed/eqV6y5zxrbk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </article>
+
+      <article>
+            <h2>Details</h2>
+           <p> I started out by hooking Alexa up to a Fan and rigging the feather with an Adafruit Library called Fauxmo. Fauxmo let’s any embedded device mimic a WeMo, which is an internet connected power plug. It was useful for proving a concept, but I found it limiting as it would only trigger Alexa’s default response. So instead, I used a combination of a Power Switch Tail, which is an enclosed high powered relay, which is really handy when you don’t want to splice main power lines, and an Adafruit feather to poll an external API point built in Flask. The python program that governs Alexa’s feelings collects external data each time its run, and posts a command to the end point. Depending on the command, the Alexa will respond differently. </p>
+          </article>
+      <article>
+        <h2>System Logic</h2>
+       <img src="{{ url_for('static', filename='images/system.jpg') }}" width="640" />
+      </article>
+      <nav id="primary_nav">
+          <ul>
+            <li class="top"><a href="#home">About</a></li>
+          </ul>
+        </nav>
+   
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <title>SAD Blender</title>
+</head>
+<body id="home">
+	<div class="wrapper">
+		<header>
+				<!-- header -->
+				<h1 class="logo"><a href="">SAD Blender</a></h1>
+				<a class="to_nav" href="#primary_nav">Menu</a>
+			</header>
+			<!-- content -->
+
+		{% block content %}{% endblock %}
+					
+		<footer>
+			<!-- footer -->
+			&copy;2017 Nadine Lessio
+		</footer>
+	</div> <!-- end of wrapper -->
+</body>
+</html>

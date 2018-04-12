@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+ 
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* begin our actual styles */
+
+
+body {
+    background: url(images/skulls.jpg);
+    background-repeat: repeat;
+    font: 16px/1.4em 'Ariel', sans-serif;
+    color: #1c1c1c;
+}
+ 
+p,
+ul {
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+ 
+ul {
+    list-style: disc;
+    padding: 0;
+}
+ 
+a {
+    color: #cc33cc;
+}
+ 
+
+h2 {
+    border-bottom: 1px solid #e8e8e8;
+    color: #cc0000;
+    font-family: 'Droid Serif', serif;
+    font-size: 32px;
+    line-height: 1.4em;
+    margin: 0 0 .4em;
+    font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;  
+  font-weight: bold;  
+  text-align:  center;
+  margin: 0;
+  padding: 0;
+}
+ 
+/*layout*/
+ 
+.wrapper {
+    
+}
+
+.flashes li {
+    background: #990099;
+    color: white;    
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 20px;
+
+    -webkit-border-right-radius: 5px;
+    -webkit-border-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+
+
+    -moz-border-right-radius: 5px;
+    -moz-border-left-radius: 5px;
+    -moz border-top-right-radius: 5px;
+    -mox border-top-left-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+ 
+article {
+    background: white;
+    box-shadow: 2px 2px 2px #d8d8d8;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /*padding: 10px 20px 0 20px;
+    */
+}
+ 
+/*header*/
+ 
+header {
+    background: #1c1c1c;
+    padding: 30px;
+    -webkit-border-right-radius: 5px;
+    -webkit-border-left-radius: 5px;
+    -moz-border-right-radius: 5px;
+    -moz-border-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+ 
+        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+        header:before,
+        header:after {
+            content:"";
+            display:table;
+        }
+         
+        header:after {
+            clear:both;
+        }
+         
+        /* For IE 6/7 (trigger hasLayout) */
+        header {
+            zoom:1;
+        }
+ 
+h1.logo a {
+    color: #d8d8d8;
+    text-decoration: none;
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    font-size: 40px;
+    line-height: 22px;
+    float: left;
+    
+}
+
+/* Form */
+
+form {
+    
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.hp {
+    display: none;
+    visibility: hidden;
+}
+
+.inBox {
+    
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+
+    -webkit-border-right-radius: 5px;
+    -webkit-border-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+
+
+    -moz-border-right-radius: 5px;
+    -moz-border-left-radius: 5px;
+    -moz border-top-right-radius: 5px;
+    -mox border-top-left-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+}
+
+.btn {
+    background: #aa5caa;
+    border: 1px solid #ffccff;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+
+    -webkit-border-right-radius: 5px;
+    -webkit-border-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+
+
+    -moz-border-right-radius: 5px;
+    -moz-border-left-radius: 5px;
+    -moz border-top-right-radius: 5px;
+    -mox border-top-left-radius: 5px;
+
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+ 
+
+ 
+/*footer*/
+ 
+footer {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    
+ 
+    a.to_nav {
+        display: none;
+    }
+    .wrapper {
+        position: relative;
+        width: 768px;
+        margin: auto;
+    }
+     
+    #primary_nav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: none;
+    }
+     
+    #primary_nav li {
+        display: inline;
+    }
+     
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        
+    }
+
+    #primary_nav li.top {
+    display: none;
+    }
+ 
+}
+
+@media only screen and (max-width: 500px) {
+    
+
+    .columnOne {
+        
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .columnTwo {
+        
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+}

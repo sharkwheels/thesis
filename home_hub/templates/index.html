@@ -1,0 +1,19 @@
+<!doctype html>
+{% extends "layout.html" %}
+
+{% block content %}
+<article>
+ 	<h2>About</h2>
+ 	<p>Home Hub (also called Unexpected Machine), is  a Google Home with its own agenda. The home gives you some options of things you can do, but immediately finds a bug in the system to troubleshoot. It asks if you can wait for a bit while it goes to figure it out, but it never intends to come back to serving you. Instead you are placed in a situation where you have to interrupt it to get it to do anything. It proceeds to become more irate, using your house lights to emote itself at you until it becomes so annoyed that it rage quits, turning out all your lights and leaving you in the dark. </p>
+  </article>
+  <article>
+  	<h2>Video</h2>
+  	<p><iframe width="640" height="395" src="https://www.youtube.com/embed/oUrOzSSS3VU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+  </article>
+
+  <article>
+  <h2>System Logic</h2>
+  <img src="{{ url_for('static', filename='images/system.png') }}" width="640" />
+  </article>
+
+{% endblock %}

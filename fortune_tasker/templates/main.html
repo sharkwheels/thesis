@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<article>
+        <h2>About</h2>
+        <p>Fortune Tasker is an interactive installation by <a href="https://nadinelessio.com" target="_blank">Nadine Lessio</a> and <a href="https://shepherdshound.carbonmade.com/" target="_blank">Alanna Predko</a> using an Amazon Alexa, reclaimed deer skull, and a tiny printer. Alexa is usually positioned as a general use interface seeking to become part of our everyday narrative. Fortune Tasker subverts that by changing the Alexa to no longer be your personal assistant, but a personal mystic. A magical object rather than a spy.</p>
+      </article>
+
+      <article>
+      <h2>Video</h2>
+      <iframe allowFullScreen frameborder="0" height="400" mozallowfullscreen src="https://player.vimeo.com/video/247001111" webkitAllowFullScreen width="640"></iframe>
+      </article>
+
+      <article>
+            <h2>Details</h2>
+            <p>v1.0 is made using custom software that programatically compliles fortunes, while also interfacing with the Alexa API, and a small printer. It was created by Nadine Lessio, and Alanna Predko.</p>
+          </article>
+
+          <article>
+
+      <a name="documentation"></a>
+        <h2>Documentation</h2>
+        
+          
+          <div class="columnOne">
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9704.jpg') }}" width="500" /></div>
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9697.jpg') }}" width="500" /></div>
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9715.jpg') }}" width="500" /></div>
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9699.jpg') }}" width="500" /></div>
+            
+          </div>
+
+          <div class="columnTwo">
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9718.jpg') }}" width="500" /></div>
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9700.jpg') }}" width="500" /></div>
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9703.jpg') }}" width="500" /></div>
+            <div class="gallery_item"><img src="{{ url_for('static', filename='fortune/images/IMG_9720.jpg') }}" width="500" /></div>
+            
+          </div>
+
+          <p class="clear"></p>
+        
+      </article>
+      <article>
+        <h2>System Logic</h2>
+        <p>
+        <img src="{{ url_for('static', filename='fortune/images/system.png') }}" width="640" />
+        </p>
+      </article>
+
+      <article>
+        <a name="contact"></a>
+        <h2>Contact</h2>
+        <p><a href="mailto:work@nadinelessio.com">Email</a></p>
+      </article>
+
+      <nav id="primary_nav">
+          <ul>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="top"><a href="#home">About</a></li>
+          </ul>
+        </nav>
+   
+{% endblock %}

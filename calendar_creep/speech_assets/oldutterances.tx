@@ -1,0 +1,51 @@
+makeAnEvent make an event
+makeAnEvent make a new event
+
+EventTimeAndDate {thedate} at {timeofday}
+EventTimeAndDate {timeofday} on {thedate}
+EventTimeAndDate {timeofday} {thedate}
+EventNameAndLocation {evNameAndloc}
+
+YesIntent Yes
+YesIntent Sure
+YesIntent Go ahead
+YesIntent I do
+YesIntent Yup
+YesIntent Yes Please
+YesIntent Schedule the event
+YesIntent Please just schedule the event
+YesIntent would you just shceudle the event already
+YesIntent Just make the event please
+YesIntent Make the fucking event
+YesIntent OK fine
+YesIntent OK
+YesIntent okay
+YesIntent what the hell yes
+YesIntent why would you say that yes
+YesIntent Just schedule the event
+
+NoIntent No
+NoIntent Nope
+NoIntent No Thank You
+NoIntent know
+NoIntent I said no
+NoIntent No way
+NoIntent I think not
+NoIntent I've changed my mind
+NoIntent Just Forget it
+NoIntent Maybe I shouldn't go
+NoIntent I've decided not to go
+
+AMAZON.HelpIntent Help
+AMAZON.HelpIntent why are you doing this
+AMAZON.HelpIntent what the hell
+AMAZON.HelpIntent I don't understand
+AMAZON.HelpIntent why are you doing this
+AMAZON.HelpIntent I feel lost
+AMAZON.HelpIntent I don't know
+AMAZON.HelpIntent what are you doing
+AMAZON.HelpIntent why is this happening
+AMAZON.HelpIntent what did you just say
+AMAZON.HelpIntent wait what
+AMAZON.StopIntent stop
+AMAZON.CancelIntent cancel

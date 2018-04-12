@@ -1,0 +1,191 @@
+{
+  "intents": [
+    {
+      "intent": "makeAnEvent"
+    },
+  	{
+      "slots": [
+        {
+          "name": "thedate",
+          "type": "AMAZON.DATE"
+        },
+        {
+          "name": "timeofday",
+          "type": "AMAZON.TIME"
+        }
+      ],
+      "intent": "EventTimeAndDate"
+    },
+    {
+      "slots": [
+        {
+          "name": "evNameAndloc",
+          "type": "MY_EVENT_NAME"
+        }
+      ],
+      "intent": "EventNameAndLocation"
+    },
+    {
+      "intent": "YesIntent"
+    },
+    {
+      "intent": "NoIntent"
+    },
+    {
+      "intent": "WhatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
+
+/*
+
+{
+  "intents": [
+    {
+      "intent": "makeAnEvent"
+    },
+    {
+      "slots": [
+        {
+          "name": "thedate",
+          "type": "AMAZON.DATE"
+        },
+        {
+          "name": "timeofday",
+          "type": "AMAZON.TIME"
+        }
+      ],
+      "intent": "EventTimeAndDate"
+    },
+    {
+      "slots": [
+        {
+          "name": "evName",
+          "type": "MY_EVENT_NAME"
+        },
+        {
+          "name": "evLoc",
+          "type": "AMAZON.LocalBusiness"
+        }
+      ],
+      "intent": "EventNameAndLocation"
+    },
+    {
+      "intent": "YesIntent"
+    },
+    {
+      "intent": "NoIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
+*/
+/*
+
+{
+	"intents": 
+	[
+		{
+			"intent": "MorningOrEveningIntent",
+			"slots": [{
+				"name": "timeofday",
+				"type": "AMAZON.TIME"
+			}]
+		 }, {
+			"intent": "DayCountIntent",
+			"slots": [{
+				"name": "thedate",
+				"type": "AMAZON.DATE"
+			}]
+		},
+		{
+			"intent": "EventTimeAndDate",
+			"slots": [{
+				"name": "thedate",
+				"type": "AMAZON.DATE" 
+				},
+				{
+					"name": "timeofday",
+					"type": "AMAZON.TIME"
+				}]
+		}
+	]
+}
+
+
+
+
+
+
+{
+	"intents": 
+	[{
+		"intent": "MorningOrEveningIntent",
+		"slots": [{
+			"name": "timeofday",
+			"type": "AMAZON.TIME"
+		}]
+	 }, {
+		"intent": "DayCountIntent",
+		"slots": [{
+			"name": "thedate",
+			"type": "AMAZON.DATE"
+		}]
+	}]
+}
+*/
+
+/*{
+	"intents": 
+	[
+		{
+			"slots": 
+			[
+				{
+					"name": "firstname",
+					"type": "AMAZON.US_FIRST_NAME"
+				}
+			],
+			"intent": "HelloIntent"
+		},
+		{
+			"slots":
+			[
+				{
+					"name": "day",
+					"type": "AMAZON.DATE" 
+				}
+				{
+					"name": "time",
+					"type": "AMAZON.TIME"
+				}
+			]
+		}
+		{
+			"intent": "AMAZON.HelpIntent"
+		},
+		{
+			"intent": "AMAZON.StopIntent"
+		},
+		{
+			"intent": "AMAZON.CancelIntent"
+		}
+	]
+}*/
