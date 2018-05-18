@@ -1,4 +1,7 @@
-# thesis
+# Working With Useless Machines
+This is the repo for my thesis at OCADU, in which I made a collection of prototypes based on Alexa and google home that don't do what you want them to do. They emote, they take over your things, they argue with you, sometimes they have internal motivations. 
+
+
 Home Hub
 A google home assistant that is too busy debugging itself to assist you.
 
