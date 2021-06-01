@@ -23,5 +23,5 @@ PyYAML==3.12
 requests==2.18.4
 six==1.10.0
 tzlocal==1.5.1
-urllib3==1.22
+urllib3==1.26.5
 Werkzeug==0.12.2
